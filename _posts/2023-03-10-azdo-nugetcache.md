@@ -33,26 +33,25 @@ How to set up caching for npm packages?
 
 {% highlight YAML %}
 
-- job: build-node-app
-  displayName: Build Node App
-  steps:
+- task: Cache@2
+  displayName: Cache node_modules (Assessments)
+  inputs:
+    key: 'npm | "$(Agent.OS)" | $(Build.SourcesDirectory)\package-lock.json'
+    path: $(Build.SourcesDirectory)\node_modules
+    cacheHitVar: CACHE_HIT
 
-  - task: UseNode@1
-    inputs:
-      version: 'latest'
+- task: Npm@1
+  displayName: Install Node Modules
+  inputs:
+    command: 'install'
+    workingDir: $(Build.SourcesDirectory)
+  condition: ne(variables.CACHE_HIT, 'true')
 
-  - task: Npm@1
-    displayName: Install vueJs shared apps node modules
-    condition: ne(variables.SHARED_NODE_MODULES_CACHE_HIT, 'true')
-    inputs:
-      command: 'install'
-      workingDir: '$(Build.SourcesDirectory)\src\Mars\Mars\Scripts\vue-apps\shared'
+- task: Npm@1
+  displayName: Run NPM Build
+  inputs:
+    command: 'custom'
+    workingDir: '$(Build.SourcesDirectory)
+    customCommand: 'run build'
 
-  - task: Npm@1
-    displayName: Build vueJs assessments app
-    inputs:
-      command: 'custom'
-      workingDir: '$(Build.SourcesDirectory)
-      customCommand: 'run build'
-      
 {% endhighlight %}
