@@ -10,11 +10,13 @@ categories: azure-devops
 
 ### What is caching?
 
-In short, caching is typically a _higher_ speed data storage layer used to serve up data faster than retrieving it from it's original source.
+In short, caching is a transient _higher_ speed data storage layer. Data is stored int this layer for faster retrieval than from it's original source.
 
-In Azure DevOps Pipelines, we have available to us the Cache@2 task, which enables us to store build / download output, to be retrieved in subsequent runs faster than if we were to build and download them again.
+In Azure DevOps Pipelines, there is the Cache@2 task. This enables us to store files / directories on the DevOps organisations cache layer, which can then be retrieved in subsequent runs. The goal to make subsequent runs faster, by not having to reproduce those files / directories.
 
-*Caching isn't always the answer.* In some cases, it may not be economical to cache. Such as when the restore from cache takes longer than the alternative. 
+Good use cases for Caching in Azure DevOps Pipelines are dependencies.
+
+> *Caching isn't always the answer.* In some cases, it may not be economical to cache. Such as when the restore from cache takes longer than the alternative. 
 
 ### How to cache
 
