@@ -3,3 +3,5 @@ github_users:
 
 github_repos:
   - nicktolhurst/nicktolhurst.github.io
+  - bigcommerce/stencil-cli
+  - azure/bicep
