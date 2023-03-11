@@ -14,19 +14,19 @@ In short, caching is a transient high speed data storage layer, in which data is
 
 For #AzureDevOps, this enables us to store our projects dependencies on pipelines cache layer, which can then be retrieved in subsequent runs. This can make subsequent runs, that have no change in dependencies, much faster.
 
-In some cases, it may not be economical to cache. The retrieval from cache takes longer than the alternative.
-
-
+In some cases, it may not be economical to cache as the retrieval from cache may take longer than downloading from the origin.
 
 ### How to cache
 
 In it's simplest form, all caching requires is a `cache key` and a `path`. The `key` is used to determine whether or not your cache should be invalidated or restored. The `path` is the directory which you want to store and retrieve.
 
-#### The Cache Key
+#### The cache key
 
-The cache key is made up of strings, file paths, or file patterns, separated by `|`. The contents of files matched are hashed to produce a dynamic cache key with the idea being that the key can be unique enough to invalidate only when necessary.
+The cache key is made up of strings, file paths, or file patterns, separated by `|`. The contents of files matched are hashed to produce a dynamic cache key with the idea being that the key will be unique enough to invalidate the cache only when necessary.
 
-A good example of a key for NPM dependencies, would be to use the `packages-lock.json` file. The only time we want this cache to invalidate is when we change a package dependency on our project. This, and only this, would cause a change to our `packages-lock.json` file. We may also want to use the string `npm` to identify the tool we are using, and the operating system built-in variable, to ensure matrix-strategy cross platform builds are supported.
+A good example of a key for NPM dependencies, would be to use a `packages-lock.json` file. We know that our `packages-lock.json` only changes when we change a dependency. This is perfect, as we can re-use the same dependencies for each build as long as we haven't changed them. If we do change them, the cache will be invalidated, and we will proceed to update the cache with the new dependencies.
+
+A suitable cache key for NPM dependencies would be `npm | "$(Agent.OS)" | **/package-lock.json`. Including `"$(Agent.OS)"` gives us the ability to run cross-platform builds, where the package dependencies may differ due to OS differences.
 
 #### Caching NPM dependencies - `node_modules`
 
