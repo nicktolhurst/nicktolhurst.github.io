@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  azure devops - reduce pipeline artifacts
-date:   2023-03-10
+date:   
 description: >
   Using PowerShell to rapidly & recursively stage artifacts for publishing.
 tags: Azure DevOps Pipelines CICD PowerShell
