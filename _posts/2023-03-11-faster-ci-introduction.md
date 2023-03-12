@@ -1,6 +1,6 @@
 ---
 layout: post
-title: faster ci - an introduction
+title: an introduction to faster cicd
 date: 11-03-2023
 description: >
   A blog series documenting my learnings as I journey towards massively optimising #AzureDevOps Pipelines.
