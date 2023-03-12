@@ -34,23 +34,4 @@ This is day 0. This is where we are starting, and our current software developme
 
 Yes - these times are suspiciously similar. We will cover that in a future post.
 
-
-{%- assign sorted_projects = site.posts | sort: "date" -%}
-<!-- Generate cards for each post in this series. -->
-<br>
-<hr>
-<br>
-#### The Series
-<div class="container">
-  <div class="row row-cols-2">
-  {%- for post in sorted_projects limit:6 -%}
-    {% for category in page.categories %}
-      {% if post.categories contains category %}
-        {% if post.url != page.url %}
-          {% include posts_horizontal.html %}
-        {% endif %}
-      {%- endif %}
-    {% endfor %}
-  {%- endfor %}
-  </div>
-</div>
+{% include posts_in_category_cards.html %}
