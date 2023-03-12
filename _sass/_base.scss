@@ -36,6 +36,17 @@ figure, img {
   max-width: 90vw;
 }
 
+.no-border {
+  box-shadow: none !important;
+}
+
+.hero {
+  max-width: 60% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+
 blockquote {
   background: var(--global-bg-color);
   border-left: 2px solid var(--global-theme-color);
