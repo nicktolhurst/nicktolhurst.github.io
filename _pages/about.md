@@ -7,14 +7,16 @@ subtitle: Deep Dives, Tips & Tricks, Hacks, Etc.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  address: 
+  image_circular: false
+  address: null
 
-news: false                # includes a list of news items
-selected_papers: false    # includes a list of papers marked as "selected={true}"
-social: true              # includes social icons at the bottom of the page
+news: false
+selected_papers: false
+social: true
 ---
 
-Infrastructure engineer and DevOps enthusiast. I love being outdoors, climbing, and adventuring with my dogs.
+Infrastructure engineer and DevOps enthusiast. I love being outdoors, climbing, adventuring, and spending time with my dogs.
 
 This blog is a journey of professional growth, as I deep-dive and discover new technologies, tips & tricks and hacks to share and discuss.
+
+I understand my limitations, and I encourage discussions and conversations to gain deeper a understanding.
