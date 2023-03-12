@@ -8,6 +8,8 @@ tags: Azure DevOps Pipelines CICD
 categories: azure-devops
 ---
 
+{% include figure.html path="assets/img/nuget-cache.png" class="img-fluid no-border hero rounded z-depth-1" %}
+
 ### What is caching?
 
 In short, caching is a transient high speed data storage layer, in which data is stored for faster retrieval than from it's original source.
