@@ -10,6 +10,8 @@ categories: azure-devops
 
 {% include figure.html path="assets/img/ci-cd-logo.png" class="img-fluid no-border hero rounded z-depth-1" %}
 
+## Why go faster?
+
 Nowadays, software development relies heavily on CI / CD pipelines to build, test, package and deploy your products. The productivity of your development team directly depends on the speed of your CI / CD pipelines. With that in mind, it's clear how important it is to periodically benchmark and invest in CI / CD improvements.
 
 But how much effort should you put into this task? Is your CI / CD pipeline optimised perfectly? Unlikely. Is perfectly optimised the end goal? Also, unlikely.
@@ -18,7 +20,7 @@ Optimising CI / CD for performance eventually comes with diminishing returns. Th
 
 The output of my journey will be shared here, in the hope that others can optimise their own efforts to speed up their own CI / CD pipelines, without having to make as many mistakes along the way.
 
-#### Before we dive in
+## But first..
 
 Let's start with some context.
 
