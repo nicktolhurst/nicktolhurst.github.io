@@ -18,6 +18,22 @@ Optimising CI / CD for performance eventually comes with diminishing returns. Th
 
 The output of my journey will be shared here, in the hope that others can optimise their own efforts to speed up their own CI / CD pipelines, without having to make as many mistakes along the way.
 
+#### Before we dive in
+
+Let's start with some context.
+
+I frequently work with a large monolithic code-base. In fact, there are over 50 developers working on this repository. There are hundreds of projects that each require building, testing, packaging, and publishing. Once published, the deployment of these projects is handled outside of #AzureDevOps.
+
+Despite the size of the code-base, productivity isn't terrible. The developers work together in unison to deliver features and enhancements into production many times per day. But there are inefficiencies within the design, process and implementation of the CI / CD pipeline that could accelerate the productivity of our teams.
+
+This is day 0. This is where we are starting, and our current software development life cycle (SDLC) benchmarks are as follows:
+
+- Feature Development takes ~ 55m to deploy to a testing environment.
+- PR / Code Review takes ~ 55m to run automated build validation tasks.
+- Deployment takes ~ 55m to build and create a production channel deployment.
+
+Yes - these times are suspiciously similar. We will cover that in a future post.
+
 #### The Series
 
 {%- assign sorted_projects = site.posts | sort: "date" -%}
