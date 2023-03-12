@@ -34,14 +34,13 @@ This is day 0. This is where we are starting, and our current software developme
 
 Yes - these times are suspiciously similar. We will cover that in a future post.
 
-#### The Series
 
 {%- assign sorted_projects = site.posts | sort: "date" -%}
-
 <!-- Generate cards for each post in this series. -->
 <br>
 <hr>
 <br>
+#### The Series
 <div class="container">
   <div class="row row-cols-2">
   {%- for post in sorted_projects limit:6 -%}
