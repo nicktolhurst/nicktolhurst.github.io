@@ -11,5 +11,4 @@ As a way to deepen my understanding of Azure DevOps Pipelines, I decided to take
 
 To give a little bit of a background, the CI pipeline I am working with builds a monolithic code-base. The tech stack is a mix of .NET Framework, .NET Core, .NET 6, and VueJS. It builds, tests, packages and publishes deployment packages to a NuGet feed for deployment.
 
-I intend to disassemble every part of this pipeline, in an effort to deep dive into pipeline optimization. This project is intended to be a dump of all the things I learn along the way. 
-
+I intend to disassemble every part of this pipeline, in an effort to deep dive into pipeline optimization. This project is intended to be a dump of all the things I learn along the way.

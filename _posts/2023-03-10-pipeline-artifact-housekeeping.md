@@ -61,9 +61,3 @@ Write-Host "`r`nCopy completed in $($overallPerformance.TotalMilliseconds) ms." 
 
 
 {% endhighlight %}
-
-### Gotchyas
-
-> [warning]The given cache key has changed in its resolved value between restore and save steps;
-
-Something has happened between the `Cache@2` step and the end of the job that has caused the dynamic hash key to change. Check that the tool versions that generated / updated the files used in the key are the same. For example, using `NuGet 5.1.0` to restore and generate `package.lock.json` files on your development machine won't match the build servers `package.lock.json` files, if the agent has `NuGet 6.0.0` installed.
