@@ -1,7 +1,7 @@
 ---
 layout: post
 title: faster ci - an introduction
-date: 12-03-2023
+date: 11-03-2023
 description: >
   A blog series documenting my learnings as I journey towards massively optimising #AzureDevOps Pipelines.
 tags: azure-devops azure cicd performance

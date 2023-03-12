@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  azure devops - dependency caching
-date:   
+title: azure devops - dependency caching
+date: 12-03-2023
 description: >
     Using caching in your pipeline is a great way to speed up your pipeline's execution time.
 tags: Azure DevOps Pipelines CICD
