@@ -20,7 +20,7 @@ Optimising CI / CD for performance eventually comes with diminishing returns. Th
 
 The output of my journey will be shared here, in the hope that others can optimise their own efforts to speed up their own CI / CD pipelines, without having to make as many mistakes along the way.
 
-## But first..
+### But first...
 
 Let's start with some context.
 
