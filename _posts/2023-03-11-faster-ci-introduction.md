@@ -34,4 +34,4 @@ This is day 0. This is where we are starting, and our current software developme
 
 Yes - these times are suspiciously similar. We will cover that in a future post.
 
-{% include posts_in_category_cards.html %}
+<!-- {% include posts_in_category_cards.html %} -->
