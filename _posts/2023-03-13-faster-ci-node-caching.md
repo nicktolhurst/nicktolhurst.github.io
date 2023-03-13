@@ -28,17 +28,17 @@ Use strings as identifiers, a good example would be a tool name, tool version, o
 
 A file path (file pattern) produces a hash based on the file (collection of files), resulting in a unique key each time the contents of this file (these files) change. Think, "What changes only when I update my dependencies?". Use that file as a part of the cache key.
 
-For example, we will look at the pipeline's NPM dependencies. In the pipeline, we require a specific Node version. This node version matches the installed tools of our developers. In this case, we are not concerned with the version of the tool. We will start our key with simply the tool `node`. Though not an immediate requirement, we likely want to build the application on Windows and Linux operating systems. Therefore, the cache key can extend to `node | "$(Agent.Os)"`. Finally, to determine whether or not the dependencies have changed, we will target a single `package-lock.json` file. We know the `package-lock.json` only updates when a Node dependency has changed. Our final cache key is `node | "$(Agent.Os)" | **/package-lock.json`.
+For example, we will look at the pipeline's NPM dependencies. In the pipeline, we require a specific Node version. This node version matches the installed tools of our developers. In this case, we are not concerned with the version of the tool. We will start our key with simply the tool `node`. Though not an immediate requirement, we likely want to build the application on Windows and Linux operating systems. Therefore, the cache key can extend to `node | "$(Agent.Os)"`. Finally, to determine whether or not the dependencies have changed, we will target a single `package-lock.json` file. We know the `package-lock.json` only updates when a Node dependency has changed. Our final cache key is `node | "$(Agent.OS)" | **/package-lock.json`.
 
-> Gotchya: Keys with a period (`.`) in them are considered file paths. To avoid this interpretation, wrap those keys in double quotes (`"`), as we have the `"$(Agent.Os)"` segment in the example.
+> Gotchya: Keys with a period (`.`) in them are considered file paths. To avoid this interpretation, wrap those keys in double quotes (`"`), as we have the `"$(Agent.OS)"` segment in the example.
 
 The `path` parameter value is the location of the Node dependencies. In our case, this is `$(Build.SourcesDirectory)\node_modules`.
 
 Having `node_modules` pull from the cache is considerably quicker than downloading them using `npm`. Moreover, installing `node_modules` when they already exist is quicker than installing them into an empty directory. However, do we need to install them if we have retrieved them from the cache?
 
-By setting the task parameter `cacheHitVar`, a build-scoped variable is available to us and can be used as a condition in subsequent tasks, allowing us to avoid the unnecessary re-install of node_modules if they already exist on disk. Therefore, we will set `cacheHitVar` to `NODE_CACHE_HIT` and add the condition `ne(variables.NODE_CACHE_HIT, 'true')` to the step that installs our dependencies.
+By setting the task parameter `cacheHitVar`, a build-scoped variable is available to us and can be used as a condition in subsequent tasks, allowing us to avoid the unnecessary re-install of `node_modules` if they already exist on disk. Therefore, we will set `cacheHitVar` to `NODE_CACHE_HIT` and add the condition `ne(variables.NODE_CACHE_HIT, 'true')` to the step that installs our dependencies.
 
-#### Our example:
+#### Example
 
 {% highlight YAML %}
 
