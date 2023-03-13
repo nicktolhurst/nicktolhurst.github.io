@@ -34,4 +34,4 @@ Today is day 0. Today is where we will start this journey, and our current softw
 
 Yes - these times are suspiciously similar. We will cover that in a future post.
 
-<!-- {% include posts_in_category_cards.html %} -->
+{% include posts_in_category_cards.html %}
