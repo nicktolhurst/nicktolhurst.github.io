@@ -14,7 +14,7 @@ categories: azure-devops
 
 Nowadays, software development relies heavily on CI / CD pipelines to build, test, package and deploy your products. The productivity of your development team directly depends on the speed of your CI / CD pipelines. With that in mind, it's clear how important it is to periodically benchmark and invest in CI / CD improvements.
 
-But how much effort should we put into this?
+But how much effort should we invest?
 
 Optimising CI / CD for performance eventually comes with diminishing returns. The amount of time and effort investigating, benchmarking, proving and discarding will ultimately become economically impractical. Fortunately, I am not concerned with the ROI of my efforts in this blog series. In this blog series, I'm here to waste my own time in an effort to produce the most gains.
 
@@ -24,7 +24,7 @@ I will share the output of my journey here, hoping it will help others optimise 
 
 I frequently work with a large monolithic code base. Over 50 developers are working on this repository. There are hundreds of projects that each require building, testing, packaging, and publishing. Once published, the deployment of these projects is handled outside of #AzureDevOps.
 
-Despite the size of the code base, productivity isn't terrible. The developers work together in unison to deliver features and enhancements into production many times per day. But there are inefficiencies within the design, process and implementation of the CI / CD pipeline that could accelerate the productivity of our teams.
+Despite the size of the code base, productivity isn't terrible. The developers work together in unison to deliver features and enhancements into production many times per day. But there are inefficiencies within the design, process and implementation of the CI / CD pipeline that, once removed, would accelerate the productivity of our teams.
 
 Today is day 0. Today is where we will start this journey, and our current software development life cycle (SDLC) benchmarks are as follows:
 
