@@ -18,7 +18,7 @@ For #AzureDevOps, this enables us to store our project's dependencies on the pip
 
 In some cases, caching may not be economical, as the retrieval from a cache may take longer than downloading from the origin.
 
-### How to use the cache@2 task?
+### How to use the `Cache@2` task?
 
 The most basic implementation of `Cache@2` requires a `cache key` and a `path`. The `key` is used to generate a dynamic hash that determines whether or not there is a valid cache stored. The `path` is the directory you want to store and retrieve.
 
