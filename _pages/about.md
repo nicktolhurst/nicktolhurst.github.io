@@ -18,5 +18,3 @@ social: true
 Infrastructure engineer and DevOps enthusiast. I love being outdoors, climbing, adventuring, and spending time with my dogs.
 
 This blog is a journey of professional growth, as I deep-dive and discover new technologies, tips & tricks and hacks to share and discuss.
-
-I understand my limitations, and I encourage discussions and conversations to gain deeper a understanding.
