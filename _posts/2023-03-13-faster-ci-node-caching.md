@@ -6,6 +6,7 @@ description: >
     Cache Node.JS dependencies between pipeline runs. 
 tags: Azure DevOps Pipelines CICD
 categories: azure-devops
+giscus_comments: true
 ---
 
 {% include figure.html path="assets/img/npm.png" class="img-fluid no-border hero rounded z-depth-1" %}

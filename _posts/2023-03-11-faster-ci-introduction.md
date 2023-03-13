@@ -6,6 +6,7 @@ description: >
   A blog series documenting my learnings as I journey towards massively optimising #AzureDevOps Pipelines.
 tags: azure-devops azure cicd performance
 categories: azure-devops
+giscus_comments: true
 ---
 
 {% include figure.html path="assets/img/ci-cd-logo.png" class="img-fluid no-border hero rounded z-depth-1" %}
