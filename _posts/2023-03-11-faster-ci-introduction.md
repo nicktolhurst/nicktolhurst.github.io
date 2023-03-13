@@ -18,7 +18,7 @@ But how much effort should we put into this?
 
 Optimising CI / CD for performance eventually comes with diminishing returns. The amount of time and effort investigating, benchmarking, proving and discarding will eventually become economically impractical. Fortunately, the ROI of my efforts in this blog series is not something I am concerned with. In this blog series, I'm here to waste my own time, in efforts to produce the most gains.
 
-The output of my journey will be shared here, in the hope that others can optimise their own efforts to speed up their own CI / CD pipelines, without having to make as many mistakes along the way.
+The output of my journey will be shared here, in the hope that it will help others optimise their own pipelines, with less mistakes and headaches than I experience.
 
 ### First, some context
 
