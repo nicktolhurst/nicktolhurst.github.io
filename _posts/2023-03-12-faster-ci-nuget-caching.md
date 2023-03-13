@@ -1,9 +1,9 @@
 ---
 layout: post
 title: nuget dependency caching
-date: 12-03-2023
+date: 
 description: >
-    Using caching in your pipeline is a great way to speed up your pipeline's execution time.
+    Cache dependencies between pipeline runs. 
 tags: Azure DevOps Pipelines CICD
 categories: azure-devops
 ---
