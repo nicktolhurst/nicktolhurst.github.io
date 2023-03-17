@@ -1,9 +1,9 @@
 ---
 layout: post
-title: a week of clojure as a total beginner
+title: 1 week of clojure as a total beginner
 date: 17-03-2023
 description: >
-  Googles 'how to install closure'. Clicks on 'Show instead "how to install clojure"'.
+  Step 1: Google "how to install closure". Step 2: Click on "Show instead 'how to install clojure'"
 tags: clojure learning technology beginner journey
 categories: clojure-7-days
 giscus_comments: true
@@ -11,7 +11,7 @@ giscus_comments: true
 
 ### Context
 
-- I have never used `clojure` before.
+- I have never used **clojure** before.
 - I will commit at least 1 hour per day to learning.
 - I will keep a log of how much time I am spending.
 - I will be honest about my approach and thoughts.
