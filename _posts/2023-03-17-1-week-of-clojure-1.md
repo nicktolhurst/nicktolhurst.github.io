@@ -15,6 +15,8 @@ giscus_comments: true
 - I will commit at least 1 hour per day to learning.
 - I will keep a log of how much time I am spending.
 - I will be honest about my approach and thoughts.
+- I have experience with various OOP languages, but not in a professional capacity.
+- I work as an infrastructure engineer, I am not new to tech.
 
 ### Setup
 
