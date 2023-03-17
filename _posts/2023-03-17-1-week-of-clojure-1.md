@@ -35,7 +35,7 @@ Installing Calva is easy. Below is the one-liner, or you could use the UI.
 code --install-extension  betterthantomorrow.calva
 {% endhighlight %}
 
-It is also admirably beginner friendly, with an interactive getting-started guide that has a witty style. To start this, press`ctrl`+`shift`+`p`, type: `calfig`, press `enter` (you will learn more about these tasks in the guide!).
+It is also admirably beginner friendly, with an interactive getting-started guide that has a witty style. To start this, press`ctrl`+`shift`+`p`, type `calfig`, press `enter` (you will learn more about these tasks in the guide!).
 
 Wow. This looks nerdy 🤓. I'll wait to get stuck in; first, some reading:
 
