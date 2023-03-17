@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1 week of clojure as a total beginner
+title: day 1 of a week of clojure as a total beginner
 date: 17-03-2023
 description: >
   Step 1: Google "how to install closure". Step 2: Click on "Show instead 'how to install clojure'"
