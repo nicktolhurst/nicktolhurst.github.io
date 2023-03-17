@@ -1,6 +1,6 @@
 ---
 layout: post
-title: a week of `clojure` as a total beginner
+title: a week of clojure as a total beginner
 date: 17-03-2023
 description: >
   Googles 'how to install closure'. Clicks on 'Show instead "how to install clojure"'.
@@ -20,14 +20,20 @@ giscus_comments: true
 
 Where to start?
 
-1. **Google 'how to install closure'**
-2. **Click on 'Show instead "how to install clojure"'**
+1. **Google "how to install closure"**
+2. **Click on "Show instead 'how to install clojure'"**
 
-After poking around the many different ways to get **clojure** installed - and some failed attempts at WSL2 installs 🥴 - I found that vscode has an extension/environment - [Calva](https://calva.io/).
+After poking around the many different ways to get **clojure** installed - and some failed attempts with WSL2 🥴 - I found that vscode has an extension/environment - [Calva](https://calva.io/).
 
-This was a no-brainer choice. Though I am also interested in learning [Emacs](https://www.gnu.org/software/emacs/), [Vim](https://www.vim.org/), and the numerous other editors out there (and I will, I promise), I am already familiar with [vscode](https://code.visualstudio.com/), and I'm here to give **clojure** my best effort and full attention.
+This was a no-brainer. Though I am also interested in learning [Emacs](https://www.gnu.org/software/emacs/), [Vim](https://www.vim.org/), and the numerous other editors out there (and I will, I promise), I am already familiar with [vscode](https://code.visualstudio.com/), and I'm here to give **clojure** my best effort and full attention.
 
-Installing Calva was as easy as `code --install-extension  betterthantomorrow.calva`. It is also admirably beginner friendly, with its interactive getting-started guide. To start this, press`ctrl` + `shift` + `p`, type: `calfig`, press`enter` (you will learn more about these tasks in the guide!).
+Installing Calva is easy. Below is the one-liner, or you could use the UI.
+
+{% highlight bash %}
+code --install-extension  betterthantomorrow.calva
+{% endhighlight %}
+
+It is also admirably beginner friendly, with an interactive getting-started guide that has a witty style. To start this, press`ctrl`+`shift`+`p`, type: `calfig`, press `enter` (you will learn more about these tasks in the guide!).
 
 Wow. This looks nerdy 🤓. I'll wait to get stuck in; first, some reading:
 
@@ -35,7 +41,7 @@ Wow. This looks nerdy 🤓. I'll wait to get stuck in; first, some reading:
 - <https://clojure.org/guides/structural_editing>
 - <https://clojure.org/guides/repl/introduction>
 
-Okay, I wish I didn't read that - even though I know it is essential, it made little sense at this point 🤷‍♂️. It took a lot to follow, especially for a newbie in this type of programming. In retrospect (this was written up a day later), I should have completed the getting-started guide first. A little warm-up is advised.
+Okay, I wish I didn't read them - even though I know it is essential, it made little sense at this point 🤷‍♂️. It took a lot to follow, especially for a newbie in this type of programming. In retrospect - *this blog was written up a day later* - I should have completed the getting-started guide first. A little warm-up is advised.
 
 ### Actually getting started
 
@@ -45,10 +51,10 @@ My initial thoughts are this is ~~beginner~~ friendly 🙌. Can programming lang
 
 There are lots of shortcuts worth learning. Below 👇 are the top 4 that I most use so far. I'll continue to post these as I discover them.
 
-- `alt` + `enter`: Evaluate top level form.
-- `ctrl` + `enter`: Evaluate current form.
-- `ctrl` + `alt` + `c`, `enter`: Load / reload current file.
-- `escape`: Remove all results.
+- `alt`+`enter`: evaluate top level form.
+- `ctrl`+`enter`: evaluate current form.
+- `ctrl`+`alt`+`c`, `enter`: load / reload current file.
+- `escape`: remove all evaluated results.
 
 ### Wrap up
 
